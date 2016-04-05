@@ -1,0 +1,105 @@
+1: programa potencia en lenguaje de alto nivel
+
+#include<math.h>
+#include <stdio.h>
+
+int mult(int x, int y){
+int tem=0;
+for(int i=0;i<y;i++);
+tem+=x;
+}
+return temp;
+}
+int main (){
+int r=1, a=5, b=3;
+while(b>0){
+r= mult(r,a);
+b--;
+}
+return r;
+}
+
+2: programa potencia en lenguaje de bajo nivel
+
+mult
+0x0000 jmpl %L0, 8, %g0                      
+
+for
+0X0004 CMP %L0, 0                          i=%L0
+0X0008 BNE a, exit                         y=i1
+0X000C CMP %L0,% i1                        x=i0
+0X0010 BG a,salto                          temp=%L1
+0X0014 ADD %L0, 1, %L0
+0X0018 ADD %L1, %i0, %L1
+0X001C MOV %L1,O0
+
+main
+0X0020 MOV 1, %L2                         r=%L2
+0X0024 MOV 5, %L3                         a=%L3
+0X0028 MOV 3, %L4                         b=%L4
+
+while
+0X002C CMP %L4,0
+0X0030 BLG a, salida
+0X0034 call, mult
+0X0038 NOP
+0X003C SUB %L4,1,O1
+0X0040 BA, while
+0X0044 MOV %L2,O2
+
+
+3: programa potencia en lenguaje máquina
+
+FORMATO 3:
+OP            RD           OP3           RS1         i                         RS2
+10           00000        111000        01111        1                  0000000001000
+10           00000        010100        10000        1                  0000000000000
+
+FORMATO 2:
+OP             A           COND          OP2              22 BITS
+00             0           1001         00010       0000000000000000001011
+
+FORMATO 3:
+OP            RD           OP3           RS1         i                         RS2
+10           00000        010100        10000        0                  0000000011101
+
+FORMATO 2:
+OP             A           COND          OP2              22 BITS
+00             0           1010         00010       0000000000000000001001
+
+FORMATO 3:
+OP            RD           OP3           RS1         i                         RS2
+10           10000        000000        10000        1                  0000000000001
+10           10001        000000        10001        0                  0000000011100
+10           00000        000010        10001        0                  0000000001000
+10           10010        000010        00000        1                  0000000000001
+10           10011        000010        00000        1                  0000000000101
+10           10100        000010        00000        1                  0000000000011
+10           00000        010100        10100        1                  0000000000000
+
+FORMATO 2:
+OP             A           COND          OP2              22 BITS
+00             1           0010         00010       0000000000000000000001
+
+FORMATO 1:
+OP              DISP 30
+01         111111111111111111111111111101
+
+FORMATO 3:
+OP            RD           OP3           RS1         i                         RS2
+10           01001        000100        10100        1                  0000000000001
+
+FORMATO 2:
+OP             A           COND          OP2              22 BITS
+00             1           1000         00010      1111111111111111100101
+
+FORMATO 3:
+OP            RD           OP3           RS1         i                         RS2
+10           01010        000010        10010        0                  0000000000000
+
+
+
+
+
+
+
