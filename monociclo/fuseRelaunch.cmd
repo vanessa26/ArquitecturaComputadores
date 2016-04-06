@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Vanessa/monociclo/NPCTESTBENCH_isim_beh.exe" -prj "C:/Users/Vanessa/monociclo/NPCTESTBENCH_beh.prj" "work.NPCTESTBENCH" 
