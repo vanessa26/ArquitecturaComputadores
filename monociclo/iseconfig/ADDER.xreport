@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-14T17:48:34</DateModified>
+  <DateModified>2016-04-14T18:00:11</DateModified>
   <ModuleName>ADDER</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Vanessa/monociclo/iseconfig/ADDER.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Vanessa/monociclo</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/iseconfig/ADDER.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo\</ImplementationReportsDirectory>
   <DateInitialized>2016-04-14T17:48:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
