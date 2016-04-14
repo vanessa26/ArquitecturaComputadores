@@ -1,3 +1,4 @@
+-- VANESSA ARANGO - GERALDINE GARCIA
 ----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: 
@@ -39,7 +40,7 @@ end PC;
 architecture Behavioral of PC is
 
 begin
-	process(Dato_In,Clk,Reset);
+	process(Dato_In , Clk , Reset)
 			begin
 				if (Reset='1') then
 					Dout <= "00000000000000000000000000000000";

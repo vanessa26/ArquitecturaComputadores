@@ -54,10 +54,7 @@ ARCHITECTURE behavior OF ADDER_TESTBENCH IS
 
  	--Outputs
    signal SALIDA1 : std_logic_vector(31 downto 0);
-   -- No clocks detected in port list. Replace <clock> below with 
-   -- appropriate port name 
- 
-   constant <clock>_period : time := 10 ns;
+   
  
 BEGIN
  
@@ -67,12 +64,19 @@ BEGIN
           ENTRADA2 => ENTRADA2,
           SALIDA1 => SALIDA1
         );
-
-   
-
-  
-
- 
+	-- Stimulus process
+	stim_proc: process
+	
+	begin 
+		ENTRADA1 <= "00000000000000000000000000000011"; 
+		ENTRADA2 <= "00000000000000000000000000000100"; 
+		wait for 100 ns;
+		ENTRADA1 <= "00000000000000000000000000000111"; 
+		ENTRADA2 <= "00000000000000000000000000001001"; 
+		wait for 100 ns;
+		
+		
+	end process;
 
    
 END;

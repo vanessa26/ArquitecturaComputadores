@@ -1,3 +1,4 @@
+-- VANESSA ARANGO - GERALDINE GARCIA
 ----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: 
@@ -41,8 +42,8 @@ architecture Behavioral of ADDER is
 begin
 	process (ENTRADA1, ENTRADA2)
 		begin
-			SALIDA <= ENTRADA1 + ENTRADA2;
-	end process
+			SALIDA1 <= ENTRADA1 + ENTRADA2;
+	end process;
 
 end Behavioral;
 
