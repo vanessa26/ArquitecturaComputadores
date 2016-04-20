@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Vanessa/monociclo/ADDER_TESTBENCH.vhd";
+static const char *ng0 = "C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ADDER_TESTBENCH.vhd";
 
 
 
@@ -44,7 +44,7 @@ LAB0:    t1 = (t0 + 2512U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(71, ng0);
-    t2 = (t0 + 4864);
+    t2 = (t0 + 5084);
     t4 = (t0 + 2896);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -53,7 +53,7 @@ LAB2:    xsi_set_current_line(71, ng0);
     memcpy(t8, t2, 32U);
     xsi_driver_first_trans_fast(t4);
     xsi_set_current_line(72, ng0);
-    t2 = (t0 + 4896);
+    t2 = (t0 + 5116);
     t4 = (t0 + 2960);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -69,41 +69,11 @@ LAB2:    xsi_set_current_line(71, ng0);
 LAB6:    *((char **)t1) = &&LAB7;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(74, ng0);
-    t2 = (t0 + 4928);
-    t4 = (t0 + 2896);
-    t5 = (t4 + 56U);
-    t6 = *((char **)t5);
-    t7 = (t6 + 56U);
-    t8 = *((char **)t7);
-    memcpy(t8, t2, 32U);
-    xsi_driver_first_trans_fast(t4);
-    xsi_set_current_line(75, ng0);
-    t2 = (t0 + 4960);
-    t4 = (t0 + 2960);
-    t5 = (t4 + 56U);
-    t6 = *((char **)t5);
-    t7 = (t6 + 56U);
-    t8 = *((char **)t7);
-    memcpy(t8, t2, 32U);
-    xsi_driver_first_trans_fast(t4);
-    xsi_set_current_line(76, ng0);
-    t9 = (100 * 1000LL);
-    t2 = (t0 + 2320);
-    xsi_process_wait(t2, t9);
-
-LAB10:    *((char **)t1) = &&LAB11;
-    goto LAB1;
+LAB4:    goto LAB2;
 
 LAB5:    goto LAB4;
 
 LAB7:    goto LAB5;
-
-LAB8:    goto LAB2;
-
-LAB9:    goto LAB8;
-
-LAB11:    goto LAB9;
 
 }
 

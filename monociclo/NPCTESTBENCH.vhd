@@ -83,13 +83,13 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      	
-      Dato <= "01010100100010001001010100100100";
-      Reset <= '0';
+      Reset <= '1';	
       wait for 100 ns;
 		Dato <= "01011101110010101011010100100100";
       Reset <= '0';
       wait for 100 ns;
+		Dato <= "01011101110010101011010100100100";
+		wait;
       
    end process;
    

@@ -5,3 +5,13 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 ADDER.ngc A
 map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ADDER_map.ncd ADDER.ngd ADDER.pcf 
 par -w -intstyle ise -ol high -t 1 ADDER_map.ncd ADDER.ncd ADDER.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ADDER.twx ADDER.ncd -o ADDER.twr ADDER.pcf 
+xst -intstyle ise -ifn "C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ADDER.xst" -ofn "C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ADDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 ADDER.ngc ADDER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ADDER_map.ncd ADDER.ngd ADDER.pcf 
+par -w -intstyle ise -ol high -t 1 ADDER_map.ncd ADDER.ncd ADDER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ADDER.twx ADDER.ncd -o ADDER.twr ADDER.pcf 
+xst -intstyle ise -ifn "C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ADDER.xst" -ofn "C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ADDER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 ADDER.ngc ADDER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ADDER_map.ncd ADDER.ngd ADDER.pcf 
+par -w -intstyle ise -ol high -t 1 ADDER_map.ncd ADDER.ncd ADDER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ADDER.twx ADDER.ncd -o ADDER.twr ADDER.pcf 
