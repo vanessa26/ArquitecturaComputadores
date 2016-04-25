@@ -1,0 +1,2 @@
+vhdl isim_temp "CU.vhd"
+vhdl isim_temp "CUTestBench.vhd"
