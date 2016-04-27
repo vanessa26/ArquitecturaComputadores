@@ -1,0 +1,6 @@
+[Inputs]
+Reset
+ClK
+[Outputs]
+=AluResult[31:0]=
+[BiDir]

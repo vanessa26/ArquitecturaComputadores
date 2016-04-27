@@ -5,10 +5,9 @@ use ieee.std_logic_unsigned.all;
 
 entity registerFile is
     Port ( clk : in STD_LOGIC;
-			  Rs1 : in  STD_LOGIC_VECTOR(5 downto 0);
-           Rs2 : in  STD_LOGIC_VECTOR(5 downto 0);
-           Rd : in  STD_LOGIC_VECTOR(5 downto 0);
-           wren : in  STD_LOGIC;
+			  Rs1 : in  STD_LOGIC_VECTOR(4 downto 0);
+           Rs2 : in  STD_LOGIC_VECTOR(4 downto 0);
+           Rd : in  STD_LOGIC_VECTOR(4 downto 0);
 			  reset : in STD_LOGIC;
 			  Dwr : in STD_LOGIC_VECTOR(31 downto 0);
            Crs1 : out  STD_LOGIC_VECTOR(31 downto 0);
@@ -16,21 +15,28 @@ entity registerFile is
 			  );
 end registerFile;
 
-architecture syn of registerFile is
-    type ram_type is array (0 to 39) of std_logic_vector (31 downto 0);
-    signal RAM : ram_type := ((others=>(others=>'0')));
-
+architecture Behavioral of registerFile is
+	type registerFile is array(0 to 31) of std_logic_vector(31 downto 0);
+	signal registers : registerFile:= (others => x"00000000");
 begin
-
-process (clk, reset)
-    begin
-        if rising_edge(clk) then
-            if (wren = '1' and not(Rd = "00000")) then
-                RAM(conv_integer(Rd)) <= Dwr;
-            end if;
-        end if;
-    end process;
-Crs1<=RAM(conv_integer(Rs1));
-Crs2<=RAM(conv_integer(Rs2));
-
-end syn;
+	process(reset, Rs1, Rs2, Rd, DWR)
+		begin
+		--registers(0) <= "00000000000000000000000000000000";
+			if (reset = '1')then
+				Crs1 <= (others => '0');
+				Crs2 <= (others => '0');
+				registers <= (others => x"00000000");
+			else
+				CRS1 <= registers(conv_integer(Rs1));
+				CRS2 <= registers(conv_integer(Rs2));
+				
+				if (Rd /= "00000") then 
+					registers(conv_integer(Rd)) <= DWR;
+				end if;
+				
+			--	CRS1 <= registers(conv_integer(Rs1));
+			--	CRS2 <= registers(conv_integer(Rs2));
+				
+			end if;			
+	end process;
+end Behavioral;

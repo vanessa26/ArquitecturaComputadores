@@ -1,0 +1,7 @@
+vhdtdtfi -lib work PC.vhd -prj monociclo -o PC.spl -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PC.spl C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/PC.sym 
+vhdtdtfi -lib work PC.vhd -prj monociclo -o PC.spl -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PC.spl C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/PC.sym 
+vhdtdtfi -lib work PC.vhd -prj monociclo -o PC.spl -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PC.spl C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/PC.sym 
+vhdtdtfi -prj monociclo -o C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/PC.vhi -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PC.vhd 

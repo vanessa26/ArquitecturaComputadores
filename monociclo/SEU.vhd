@@ -2,13 +2,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity SEUDisp13 is
+entity SEU is
     Port ( disp13 : in  STD_LOGIC_VECTOR(12 downto 0);
            disp32 : out  STD_LOGIC_VECTOR(31 downto 0)
 			  );
-end SEUDisp13;
+end SEU;
 
-architecture Behavioral of SEUDisp13 is
+architecture Behavioral of SEU is
 
 begin
 process(disp13)

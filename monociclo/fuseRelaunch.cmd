@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/IMTestBench_isim_beh.exe" -prj "C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/IMTestBench_beh.prj" "work.IMTestBench" 
+-intstyle "ise" -incremental -o "C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/moduloprincipalTB_isim_beh.exe" -prj "C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/moduloprincipalTB_beh.prj" "work.moduloprincipalTB" 

@@ -1,0 +1,2 @@
+vhdtdtfi -prj monociclo -o C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/RF.vhi -module RF -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RF.vhd 
+vhdtdtfi -lib work RF.vhd -prj monociclo -o RF.spl -module RF -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

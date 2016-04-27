@@ -33,8 +33,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity PC is
     Port ( Dato_In : in  STD_LOGIC_VECTOR (31 downto 0);
 	        Reset : in  STD_LOGIC;
-           Dato_Out : out  STD_LOGIC;
-           Clk : in  STD_LOGIC_VECTOR (31 downto 0));
+           Clk : in  STD_LOGIC;
+			  Dato_Out: out STD_LOGIC_VECTOR (31 downto 0));
+			  
+
 end PC;
 
 architecture Behavioral of PC is
@@ -43,11 +45,11 @@ begin
 	process(Dato_In , Clk , Reset)
 			begin
 				if (Reset='1') then
-					Dout <= "00000000000000000000000000000000";
+				Dato_Out <= x"00000000";
 				else
-						if (rising_edge (Clk)) then
-						Dout<= Dato;
-						end if;
+					if (rising_edge (Clk)) then
+					Dato_Out <= Dato_In;
+					end if;		
 				end if;
 			end process;
 

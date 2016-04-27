@@ -1,0 +1,2 @@
+vhdtdtfi -lib work SEU.vhd -prj monociclo -o SEU.spl -module SEU -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SEU.spl C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/SEU.sym 

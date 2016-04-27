@@ -1,4 +1,4 @@
---------------------------------------------------------------------------------
+--Vanessa Arango y Geraldine García---------------------------------------------------------------------------
 -- Company: 
 -- Engineer:
 --
@@ -42,10 +42,9 @@ ARCHITECTURE behavioral OF RFTestBench IS
     COMPONENT registerFile
     PORT(
          clk : IN  std_logic;
-         Rs1 : IN  std_logic_vector(5 downto 0);
-         Rs2 : IN  std_logic_vector(5 downto 0);
-         Rd : IN  std_logic_vector(5 downto 0);
-         wren : IN  std_logic;
+         Rs1 : IN  std_logic_vector(4 downto 0);
+         Rs2 : IN  std_logic_vector(4 downto 0);
+         Rd : IN  std_logic_vector(4 downto 0);
          reset : IN  std_logic;
          Dwr : IN  std_logic_vector(31 downto 0);
          Crs1 : OUT  std_logic_vector(31 downto 0);
@@ -56,10 +55,9 @@ ARCHITECTURE behavioral OF RFTestBench IS
 
    --Inputs
    signal clk : std_logic := '0';
-   signal Rs1 : std_logic_vector(5 downto 0) := (others => '0');
-   signal Rs2 : std_logic_vector(5 downto 0) := (others => '0');
-   signal Rd : std_logic_vector(5 downto 0) := (others => '0');
-   signal wren : std_logic := '0';
+   signal Rs1 : std_logic_vector(4 downto 0) := (others => '0');
+   signal Rs2 : std_logic_vector(4 downto 0) := (others => '0');
+   signal Rd : std_logic_vector(4 downto 0) := (others => '0');
    signal reset : std_logic := '0';
    signal Dwr : std_logic_vector(31 downto 0) := (others => '0');
 
@@ -76,7 +74,6 @@ BEGIN
           Rs1 => Rs1,
           Rs2 => Rs2,
           Rd => Rd,
-          wren => wren,
           reset => reset,
           Dwr => Dwr,
           Crs1 => Crs1,
@@ -92,21 +89,10 @@ BEGIN
 		
 		Rs1 <="01000";
 		Rs2 <="10000";
-		Rd <="000110";
+		Rd <="00110";
 		
-		DWR<="00000000000000000000000000000111";
-		wait for 5 ms;
+		Dwr<="00000000000000000000000000000111";
 		
-		Rs1 <="00110";
-		Rs2 <="10000";
-		Rd <="010000";
-		DWR<="00000000000000000000000000000011";
-		wait for 5 ms;
-		
-		Rs1 <="10000";
-		Rs2 <="00000";
-		Rd <="000000";
-		DWR<="00000011111111111111111110000000";
 		wait for 5 ms;
       
    end process;
