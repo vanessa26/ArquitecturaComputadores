@@ -1,73 +1,9 @@
-V3 39
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ADDER.vhd 2016/04/11.17:48:21 P.20131013
-EN work/ADDER 1461719507 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ADDER.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/ADDER/Behavioral 1461719508 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ADDER.vhd \
-      EN work/ADDER 1461719507
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ALU.vhd 2016/04/19.19:04:38 P.20131013
-EN work/Alu 1461719523 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ALU.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Alu/Behavioral 1461719524 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/ALU.vhd \
-      EN work/Alu 1461719523
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/CU.vhd 2016/04/19.19:03:07 P.20131013
-EN work/CU 1461719519 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/CU.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/CU/Behavioral 1461719520 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/CU.vhd \
-      EN work/CU 1461719519
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/IM.vhd 2016/04/26.20:11:37 P.20131013
-EN work/instructionMemory 1461719513 \
+V3 3
+FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/IM.vhd 2016/04/28.17:31:14 P.20131013
+EN work/instructionMemory 1461882681 \
       FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/IM.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB std/TEXTIO 1381692176
-AR work/instructionMemory/arqInstructionMemory 1461719514 \
+AR work/instructionMemory/arqInstructionMemory 1461882682 \
       FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/IM.vhd \
-      EN work/instructionMemory 1461719513
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/moduloprincipal.vhd 2016/04/26.20:08:55 P.20131013
-EN work/moduloprincipal 1461719525 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/moduloprincipal.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/moduloprincipal/Behavioral 1461719526 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/moduloprincipal.vhd \
-      EN work/moduloprincipal 1461719525 CP ADDER CP NPC CP PC CP instructionMemory \
-      CP registerFile CP SEU CP CU CP MUX CP Alu
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/MUX.vhd 2016/04/19.19:05:21 P.20131013
-EN work/MUX 1461719521 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/MUX.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/MUX/Behavioral 1461719522 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/MUX.vhd \
-      EN work/MUX 1461719521
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/NPC.vhd 2016/04/07.22:59:29 P.20131013
-EN work/NPC 1461719509 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/NPC.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/NPC/Behavioral 1461719510 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/NPC.vhd \
-      EN work/NPC 1461719509
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/PC.vhd 2016/04/26.19:48:52 P.20131013
-EN work/PC 1461719511 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/PC.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/PC/Behavioral 1461719512 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/PC.vhd \
-      EN work/PC 1461719511
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/RF.vhd 2016/04/26.20:02:03 P.20131013
-EN work/registerFile 1461719515 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/RF.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/registerFile/Behavioral 1461719516 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/RF.vhd \
-      EN work/registerFile 1461719515
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/SEU.vhd 2016/04/26.19:17:54 P.20131013
-EN work/SEU 1461719517 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/SEU.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/SEU/Behavioral 1461719518 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/SEU.vhd \
-      EN work/SEU 1461719517
+      EN work/instructionMemory 1461882681

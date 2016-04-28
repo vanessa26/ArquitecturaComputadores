@@ -45,7 +45,7 @@ begin
 	process(Dato_In , Clk , Reset)
 			begin
 				if (Reset='1') then
-				Dato_Out <= x"00000000";
+				Dato_Out <= "00000000000000000000000000000000";
 				else
 					if (rising_edge (Clk)) then
 					Dato_Out <= Dato_In;

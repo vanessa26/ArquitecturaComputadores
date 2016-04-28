@@ -39,11 +39,11 @@ architecture arqInstructionMemory of instructionMemory is
 		return temp_mem;
 	end function;
 	
-	signal instructions : rom_type := InitRomFromFile("test.data");
+	signal instructions : rom_type := InitRomFromFile("pruebamonociclo.data");
 	
 begin
 --reset,address, instructions)
-	process(reset,address, instructions)--clk)
+	process(reset,address,instructions)--clk)
 	begin
 		--if(rising_edge(clk))then
 			if(reset = '1')then

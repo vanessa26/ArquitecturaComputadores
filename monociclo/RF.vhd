@@ -17,7 +17,7 @@ end registerFile;
 
 architecture Behavioral of registerFile is
 	type registerFile is array(0 to 31) of std_logic_vector(31 downto 0);
-	signal registers : registerFile:= (others => x"00000000");
+	signal registers : registerFile:= (others => "00000000000000000000000000000000");
 begin
 	process(reset, Rs1, Rs2, Rd, DWR)
 		begin
@@ -25,7 +25,7 @@ begin
 			if (reset = '1')then
 				Crs1 <= (others => '0');
 				Crs2 <= (others => '0');
-				registers <= (others => x"00000000");
+				registers <= (others => "00000000000000000000000000000000");
 			else
 				CRS1 <= registers(conv_integer(Rs1));
 				CRS2 <= registers(conv_integer(Rs2));

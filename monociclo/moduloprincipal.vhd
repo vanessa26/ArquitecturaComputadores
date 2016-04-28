@@ -64,6 +64,7 @@ architecture Behavioral of moduloprincipal is
          output : out  STD_LOGIC_VECTOR(31 downto 0));
 			END COMPONENT;
 
+
 		  
 		COMPONENT NPC
 		PORT(
@@ -200,9 +201,9 @@ begin
 		AluResult => ResultadoAlu
 	);
 
-	AluResult<=ResultadoAlu;								  
+									  
   
-
+AluResult<=ResultadoAlu;
 
 end Behavioral;
 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-26T20:14:08</DateModified>
+  <DateModified>2016-04-28T17:07:20</DateModified>
   <ModuleName>moduloprincipal</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/iseconfig/moduloprincipal.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo\</ImplementationReportsDirectory>
   <DateInitialized>2016-04-26T20:14:08</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
