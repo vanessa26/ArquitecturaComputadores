@@ -1,9 +1,0 @@
-V3 3
-FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/IM.vhd 2016/04/28.17:31:14 P.20131013
-EN work/instructionMemory 1461882681 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/IM.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
-      PB std/TEXTIO 1381692176
-AR work/instructionMemory/arqInstructionMemory 1461882682 \
-      FL C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/IM.vhd \
-      EN work/instructionMemory 1461882681

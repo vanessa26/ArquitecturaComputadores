@@ -2,12 +2,12 @@ Command line:
    moduloprincipalTB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50308
+     -socket  50429
 
-Thu Apr 28 18:03:20 2016
+Thu Apr 28 19:44:39 2016
 
 
- Elaboration Time: 0.171602 sec
+ Elaboration Time: 0.156002 sec
 
  Current Memory Usage: 670.818 Meg
 
@@ -19,11 +19,13 @@ Thu Apr 28 18:03:20 2016
  Total Processes        : 15
  Total Traceable Variables  : 11
  Total Scalar Nets and Variables : 2821
-Total Line Count : 55
+Total Line Count : 62
+In process IM.vhd:46 
+ 
 
- Total Simulation Time: 0.202802 sec
+ Total Simulation Time: 0.187202 sec
 
- Current Memory Usage: 985.391 Meg
+ Current Memory Usage: 670.818 Meg
 
-Thu Apr 28 18:03:55 2016
+Thu Apr 28 19:44:50 2016
 

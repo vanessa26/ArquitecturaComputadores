@@ -40,7 +40,7 @@ begin
 					when "000100" => -- sub
 						AluOp <= "000100";
 					when others => -- Cae el nop
-						ALUOP <= (others=>'1');
+						ALUOP <= (others=>'0');
 				end case;
 			else 
 			AluOp<="111111";

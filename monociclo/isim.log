@@ -17,4 +17,7 @@ at 0 ps, Instance /moduloprincipaltb/uut/Inst_registerFile/ : Warning: CONV_INTE
 at 0 ps, Instance /moduloprincipaltb/uut/Inst_registerFile/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
 at 0 ps, Instance /moduloprincipaltb/uut/Inst_InstructionMemory/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# run 100ns
+ERROR: Index 32 out of bound 0 to 31. 
+ERROR: In process IM.vhd:46 
+ 
+INFO: Simulator is stopped.

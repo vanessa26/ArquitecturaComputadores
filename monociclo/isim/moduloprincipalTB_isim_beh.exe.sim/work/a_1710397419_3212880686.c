@@ -133,7 +133,7 @@ LAB20:    xsi_set_current_line(43, ng0);
     t1 = xsi_get_transient_memory(6U);
     memset(t1, 0, 6U);
     t2 = t1;
-    memset(t2, (unsigned char)3, 6U);
+    memset(t2, (unsigned char)2, 6U);
     t3 = (t0 + 2912);
     t6 = (t3 + 56U);
     t7 = *((char **)t6);

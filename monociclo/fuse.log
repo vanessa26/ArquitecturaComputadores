@@ -33,8 +33,8 @@ Compiling architecture behavioral of entity Alu [alu_default]
 Compiling architecture behavioral of entity moduloprincipal [moduloprincipal_default]
 Compiling architecture behavior of entity moduloprincipaltb
 Time Resolution for simulation is 1ps.
-Waiting for 6 sub-compilation(s) to finish...
+Waiting for 3 sub-compilation(s) to finish...
 Compiled 26 VHDL Units
 Built simulation executable C:/Users/Vanessa/Desktop/ArquitecturaComputadores/monociclo/moduloprincipalTB_isim_beh.exe
-Fuse Memory Usage: 33452 KB
-Fuse CPU Usage: 2168 ms
+Fuse Memory Usage: 33416 KB
+Fuse CPU Usage: 2183 ms
